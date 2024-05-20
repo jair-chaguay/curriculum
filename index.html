@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
 </head>
+
 <body>
     <header>
         <h1>Curriculum Vitae</h1>
@@ -13,14 +15,109 @@
         <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Educacion</a></li>
-            <li><a href="#">Experiencia</a></li>
+            <li><a href="#">Experiencia Laboral</a></li>
             <li><a href="#">Habilidad</a></li>
         </ul>
     </nav>
 
-    <section class="Informacion Personal">
-        <h2>Información Personal</h2>
-        <p class=""></p>
+    <section id="informacion-personal">
+        <h2>Información personal</h2>
+        <p>
+            Nombre: <span>adasd</span>
+        </p>
+        <p>
+            Dirección: <span>asdasd</span>
+        </p>
+        <p>
+            Teléfono: <span>asdasdas</span>
+        </p>
+        <p>
+            Correo electrónico: <span>jasdasdas</span>
+        </p>
     </section>
+
+    <section id="educacion">
+        <h2>Educación</h2>
+        <p>
+            Grado: <span></span>
+        </p>
+        <p>
+            Institución: <span></span>
+        </p>
+        <p>
+            Fechas: <span></span>
+        </p>
+    </section>
+
+    <section id="experiencia">
+        <h2>Experiencia Laboral</p>
+
+
+
+            <p>
+                Cargo: <span>Desarrollador de software</span>
+            </p>
+            <p>
+                Empresa: <span>CNEL</span>
+            </p>
+            <p>
+                Fechas: <span></span>
+            </p>
+            <p>
+                Descripción:
+            <ul>
+                <li>Desarrollo de aplicaciones web</li>
+                <li>Mantenimiento de sistemas</li>
+                <li>Trabajo en equipo</li>
+            </ul>
+            </p>
+            <p>
+                Ubicación:
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.678614137895!2d-79.91190009640137!3d-2.1424719897104962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d7b17e460c1%3A0x58310d16fe43dad4!2sCNEL%20EP%20-%20Oficina%20Planta%20Norte%2C%20Guayaquil%2C%20Ecuador!5e0!3m2!1ses-419!2sec!4v1716231111955!5m2!1ses-419!2sec" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
+            <p>Fotos del lugar </p>
+            <img src="https://placehold.co/600x400">
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Lenguajes de programación: Python, Java, C++</li>
+            <li>Bases de datos: MySQL</li>
+            <li>Herramientas de desarrollo: Visual Studio Code, Git</li>
+        </ul>
+    </section>
+
+    <section id="contactos">
+    <h2>Contactos</h2>
+    <form id="formulario">
+        <label for="nombre">Nombres:</label> 
+            <input type="text" id="nombre" name="nombre" required="required" /><br>
+
+        <label for="apellido">Apellidos:</label> 
+            <input type="text" id="apellidos" name="apellidos" required="required" /><br>
+
+        <label for="correo">Correo electrónico:</label> 
+            <input type="text" id="correo" name="correo" required="required" /><br>
+
+        <label for="teléfono">Teléfono:</label> 
+            <input type="text" id="teléfono" name="teléfono" required="required" /><br>
+        
+        <label for="Razón">Razón del contacto:</label> 
+            <input type="text" id="Razón" name="Razón" required="required" /><br>
+
+        <input type="checkbox" id="nosoyunrobot" value="nosoyunrobot"> <label for="nosoyunrobot">No soy un robot</label><br>
+        
+        <button type="submit" name="enviar">Enviar</button> <button type="reset" name="reiniciar">Cancelar</button>
+         
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2ok22sItMnw?si=IZvK_Anr1tNlSCQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        
+    </form>
+</section>
+    <footer>
+        <p>Copyright  ©ESPOL 2024</p>
+    </footer>
 </body>
+
 </html>
