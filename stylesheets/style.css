@@ -1,0 +1,34 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffffe;
+}
+
+.informacion-personal {
+    font-family: 'Times New Roman', serif;
+}
+
+h1 {
+    font-family: Georgia, serif;
+}
+
+h2 .subtitulo {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+
+h3 {
+    font-family: Frank Ruhl Libre;
+}
+
+section {
+    margin: 2px 1px 1.5px;
+    margin-top: 0.8rem;
+    border: 0.2pt dashed #827d7d;
+    padding: 2% 1.2%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
