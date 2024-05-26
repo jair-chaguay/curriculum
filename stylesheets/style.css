@@ -1,34 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+/*Frank Ruhl Libre*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/*Lato*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sintony:wght@400;700&display=swap');
+/*Sintony*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Sintony:wght@400;700&display=swap');
+/*Mukta*/
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fffffe;
+    font-family: Mukta;
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5;
+    margin-right: 5;
 }
 
-.informacion-personal {
-    font-family: 'Times New Roman', serif;
+
+.header {
+    position: relative;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0070/5901/3716/files/coding_background.jpg?v=1688538955);
+    background-size: cover;
+    margin-top: 60px;
+    color: white;
+}
+
+.header::before {
+    /* Pseudo clase before*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.header h1 {
+    position: relative;
+    z-index: 4;
+    font-size: 3em;
+}
+
+
+nav {
+    background-color: #fefbff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+
+.menu nav ul {
+    list-style-type: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+.menu nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+
+
+.menu nav ul li a {
+    text-decoration: none;
+    flex: 1;
+    color: black;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.menu nav ul li a:hover {
+    background-color: #cf4536;
+    color: #fff;
+
+}
+
+.menu nav ul li a.active {
+    border-bottom: 2px solid #fff;
+}
+
+
+.about{
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f4effc;
+}
+
+.content-inicio {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+    font-size: 20px;
+    
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-top: 20px;
+}
+.divInfo{
+    flex-basis: calc(33.33% - 20px);
+    flex: 1;
+    margin: 30px;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.about h2{
+    font-size: 3.3em;
+    text-align: center;
+}
+
+.about .description{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 160px 50px 160px;
+}
+
+
+.img_profile {
+    width: 200px;
+    border-radius: 50%;
+    border: 10px solid white;
+    box-shadow: 5px 5px 5px 5px 5px;
+    object-fit: cover;
+}
+
+
+.experience h2{
+    text-align: center;
+    padding: 20px, 0;
+    color: #a1a1a1;
+    font-size: 40px;
+}
+
+.container-experience{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+    
+}
+
+.experience{
+    padding-bottom: 200px;
+}
+
+.elements h3{
+    color: #fff;
+    font-weight: 100;
+    padding: 20px;
+    background-color: #424242;
+}
+
+.elements{
+    box-shadow: 1px 1px 7px #555;
+}
+
+.extra-info{
+    padding: 20px;
+}
+
+.title, .date{
+    font-weight: 1600;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+
+.separador-uno{
+    border-right: 2px #09bfcc solid;
+    padding: 0 50px;
+}
+
+.separador-uno *.elements{
+    margin-bottom: 30px;
+}
+
+.separador-dos{
+    padding: 0 50px;
+}
+
+.separador-dos .elements:first-child{
+    transform: translateY(200px);
+}
+
+.separador-dos *.elements{
+    margin-bottom: 30px;
+}
+
+.habilidad{
+    background-color: #f4effc;
+    padding-bottom: 20px;
+}
+
+.habilidad h2{
+    text-align: center;
+    padding: 20px, 0;
+    font-size: 40px;
+}
+
+.skills-container{
+    font-size: 25px;
+    margin: 0 60px;
+}
+
+.skill-list{
+    margin: 30px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    margin-bottom: 20px;
+    margin-right: 30px;
+    list-style: none;
+    display: inline-block;
+}
+
+.item div {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.item img{
+    width: 100px;
+    height: auto;
+}
+
+meter {
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 h1 {
-    font-family: Georgia, serif;
+    font-family: Lato;
+    font-size: 3em;
 }
 
 h2 .subtitulo {
     font-family: 'Times New Roman', Times, serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
-
 h3 {
     font-family: Frank Ruhl Libre;
-}
-
-section {
-    margin: 2px 1px 1.5px;
-    margin-top: 0.8rem;
-    border: 0.2pt dashed #827d7d;
-    padding: 2% 1.2%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-        rgba(0, 0, 0, 0.12) 0px -12px 30px,
-        rgba(0, 0, 0, 0.12) 0px 4px 6px,
-        rgba(0, 0, 0, 0.17) 0px 12px 13px,
-        rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
