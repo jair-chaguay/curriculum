@@ -1,0 +1,62 @@
+.proyects {
+    background-color: #e3f6f5;
+}
+
+.proyects h2 {
+    color: white;
+    font-size: 50px;
+    padding: 30px 0;
+}
+
+.proyects_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 0 50px 0;
+}
+
+.proyects_container img {
+    width: 420px;
+    height: 280px;
+    overflow: hidden;
+    margin: 2px;
+    position: relative;
+    transition: .4s all;
+}
+
+.pag .hover, .dron .hover, .pedidos .hover, .bd .hover, .app_contactos .hover, .XO .hover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 53, 53, 0.568);
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: .4s all;
+}
+
+.hover p {
+    color: aliceblue;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.hover .hover-link {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 10px;
+}
+
+.pag:hover .hover, .dron:hover .hover, .pedidos:hover .hover, .bd:hover .hover, .app_contactos:hover .hover, .XO:hover .hover {
+    opacity: 1;
+}
